@@ -30,7 +30,7 @@ export default function Services() {
       <Text>Tela de Serviços</Text>
       <FlatList 
         data={servicos}
-        keyExtractor={(id) => String(id)}
+        keyExtractor={({id}) => String(id)}
         renderItem={({item}) => <Item {...item} />}
       />
     </SafeAreaView>
